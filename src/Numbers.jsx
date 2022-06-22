@@ -1,10 +1,6 @@
 import React from 'react';
 
-class Numbers extends React.Component {
-  shouldComponentUpdate(nextProps) {
-    return !(this.props.number === nextProps.number);
-  }
-  
+class Numbers extends React.PureComponent {
   render() {
     const { title, number } = this.props;
     return (
